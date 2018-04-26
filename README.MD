@@ -17,11 +17,11 @@ I. Откройте консоль Chrome и напишите
 await fetch('https://glacial-hollows-49848.herokuapp.com/author').then(x=>x.text());
 ```
 
-В браузере откройте https://glacial-hollows-49848.herokuapp.com/env
+II. В браузере откройте https://glacial-hollows-49848.herokuapp.com/env
 
 и проанализируйте состав переменных окружения. Обратите внимание на NODE_ENV
 
-Запустите приложение локально.
+III. Запустите приложение локально.
 
 ```bash
 yarn
