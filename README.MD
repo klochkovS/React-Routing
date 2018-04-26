@@ -8,3 +8,24 @@ heroku create
 git push heroku heroku:master
 heroku open
 ```
+
+Допустим адрес приложения https://glacial-hollows-49848.herokuapp.com
+
+I. Откройте консоль Chrome и напишите
+
+```JavaScript
+await fetch('https://glacial-hollows-49848.herokuapp.com/author').then(x=>x.text());
+```
+
+В браузере откройте https://glacial-hollows-49848.herokuapp.com/env
+
+и проанализируйте состав переменных окружения. Обратите внимание на NODE_ENV
+
+Запустите приложение локально.
+
+```bash
+yarn
+NODE_ENV='development' yarn start
+```
+
+Сравните с тем, что получается на хироку.
