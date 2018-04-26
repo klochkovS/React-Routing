@@ -1,16 +1,15 @@
 REACT DEMO 2018
 
-Развёртывание приложения в консоли с нуля.
-
-https://www.youtube.com/watch?v=MSTj93konow или http://kodaktor.ru/react-demo-2018/ 
+Развёртывание приложения в Heroku.
 
 ```bash
-cd && mkdir $(date +%Y%m%d_%H%M%S) && cd $_ && git clone https://github.com/GossJS/reactDemo2018.git . && yarn && yarn run build 
+cd && mkdir $(date +%Y%m%d_%H%M%S) && cd $_ && git clone -b heroku https://github.com/GossJS/reactDemo2018.git .  
 ```
 
-далее открываем http://localhost:1234
+heroku create
 
-https://github.com/GossJS/reactDemo2018/
+git add .
 
-работающий пример из этой папки /docs https://gossjs.github.io/reactDemo2018/
+git commit -m 'first'
 
+git push heroku master
