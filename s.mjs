@@ -12,7 +12,7 @@ express()
   .use(express.static('docs'))
   .get('/author', r => r.res.set({ ...html, ...CORS }).send('Алан Тьюринг'))
   .get('/env', r => r.res.set({ ...json, ...CORS }).send(process.env))
-  .get('/*', r => r.res.sendFile('docs/i.html', { root: '.' }))
+  .get('/*', r => r.res.sendFile('docs/index.html', { root: '.' }))
   .use(r => r.res.status(404).end('Still not here, sorry!'))
   .use((e, r, res, n) => res.status(500).end(`Error: ${e}`))
   .listen(process.env.PORT || PORT);
