@@ -1,9 +1,11 @@
 import React from 'react';
-import { render as r } from 'react-dom';
+import { render } from 'react-dom';
+import Counter from './Counter';
 
-const Stars = ({ length }) =>
-  <span>{Array.from({ length }, (v, i) => ++i).map(() => '⭐️').join('')}</span>;
-r(
-  <div><Stars length="5" /></div>,
-  document.querySelector('.cont'),
+render(
+  <div>
+    <Counter stars="3" /><br />
+    <Counter stars="7" />
+  </div>,
+  document.querySelector('.root'),
 );
