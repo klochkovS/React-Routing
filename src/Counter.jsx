@@ -21,9 +21,9 @@ class Counter extends Component {
 
   render() {
     return (
-      <div> Лайкер <hr />
-        <button onClick={() => this.plus()}><span>+</span></button>
+      <div> <h1>Лайкер</h1>
         <button onClick={() => this.minus()}><span>-</span></button>
+        <button onClick={() => this.plus()}><span>+</span></button>
         <Stars length={this.state.stars} />
       </div>
     );
