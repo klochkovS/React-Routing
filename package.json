@@ -7,7 +7,6 @@
     "help": "echo 'это для хироку и все зависимости слиты в dependencies'"
   },
   "name": "reactRouter",
-  "repository": "https://github.com/GossJS/reactDemo2018.git",
   "version": "1.0.0",
   "main": "./src/index.jsx",
   "engines": {
